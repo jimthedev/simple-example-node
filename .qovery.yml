@@ -9,3 +9,7 @@ routers:
   - application_name: simple-example-node
     paths:
     - /
+databases:
+- type: postgresql
+  version: 12
+  name: my-postgresql
