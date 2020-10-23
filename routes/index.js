@@ -11,7 +11,7 @@ router.get('/', async function (req, res, next) {
     // you can also use async/await
     const res = await pool.query('SELECT NOW()')
     
-    res.render('index', {title: 'Express' + res});
+    res.render('index', {title: 'Express time is: ' + res});
     await pool.end()
 });
 
